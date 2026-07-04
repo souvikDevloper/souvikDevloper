@@ -85,6 +85,6 @@ S. Ghosh, S. Maity (Supervisor: Dr. Tamal Pal, IIEST Shibpur) — *under review 
 ### 📫 Reach me
 
 - 📧 ghoshsouvik9433@gmail.com
-- 💻 [GitHub](https://github.com/souvikDevloper) &nbsp;·&nbsp; 💼 LinkedIn &nbsp;·&nbsp; 🧑‍💻 Codeforces &nbsp;·&nbsp; 🍳 CodeChef &nbsp;·&nbsp; 🟨 LeetCode
+- 💻 [GitHub](https://github.com/souvikDevloper) &nbsp;·&nbsp; 💼 [LinkedIn](https://www.linkedin.com/in/souvikdev) &nbsp;·&nbsp; 🧑‍💻 [Codeforces](https://codeforces.com/profile/dumb_god) &nbsp;·&nbsp; 🍳 [CodeChef](https://www.codechef.com/users/dump_god) &nbsp;·&nbsp; 🟨 [LeetCode](https://leetcode.com/u/souvikdevloper/)
 
-<sub>⚙️ Add your exact LinkedIn / Codeforces / CodeChef / LeetCode handles to the links above.</sub>
+
