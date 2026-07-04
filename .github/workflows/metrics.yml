@@ -1,0 +1,43 @@
+name: Metrics
+on:
+  # Regenerate the SVG once a day, and let you trigger it manually
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate metrics
+        uses: lowlighter/metrics@latest
+        with:
+          # Personal Access Token stored as a repo secret (see setup notes)
+          token: ${{ secrets.METRICS_TOKEN }}
+          user: souvikDevloper
+
+          # Output file committed to the repo root
+          filename: github-metrics.svg
+          template: classic
+          config_timezone: Asia/Kolkata
+
+          # Core panels: header + recent activity + community stats + repos
+          base: header, activity, community, repositories, metadata
+
+          # Commits / PRs / reviews / issues breakdown (the radar-style view)
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+          # Top languages by bytes
+          plugin_languages: yes
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_limit: 8
+
+          # Lines of code changed
+          plugin_lines: yes
